@@ -28,13 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.frmDangNhap1 = new WinformComponentCustome.FrmDangNhap();
+            this.frmDangNhap2 = new WinformComponentCustome.FrmDangNhap();
             this.SuspendLayout();
+            // 
+            // frmDangNhap1
+            // 
+            this.frmDangNhap1.Location = new System.Drawing.Point(12, 12);
+            this.frmDangNhap1.Name = "frmDangNhap1";
+            this.frmDangNhap1.Size = new System.Drawing.Size(316, 189);
+            this.frmDangNhap1.TabIndex = 0;
+            // 
+            // frmDangNhap2
+            // 
+            this.frmDangNhap2.Location = new System.Drawing.Point(364, 12);
+            this.frmDangNhap2.Name = "frmDangNhap2";
+            this.frmDangNhap2.Size = new System.Drawing.Size(302, 198);
+            this.frmDangNhap2.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 288);
+            this.ClientSize = new System.Drawing.Size(698, 248);
+            this.Controls.Add(this.frmDangNhap2);
+            this.Controls.Add(this.frmDangNhap1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +60,9 @@
         }
 
         #endregion
+
+        private WinformComponentCustome.FrmDangNhap frmDangNhap1;
+        private WinformComponentCustome.FrmDangNhap frmDangNhap2;
     }
 }
 
