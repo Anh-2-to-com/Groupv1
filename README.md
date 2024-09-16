@@ -36,3 +36,43 @@ Xây dựng hệ thống Quản lý Nhà Hàng một cách chuyên nghi�
 <h4>Yêu cầu</h4>
 AI: Dự đoán doanh thu
 Web: Spring MVC
+Ngôn ngữ: Java core
+Framework: Bootstrap
+Nghiệp vụ:
+<table>
+  <tr>
+    <th>STT</th>
+    <th>Nghiệp vụ</th>
+    <th>Phân công</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Đăng nhập</td>
+    <td>Hiền</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Đăng ký tài khoản</td>
+    <td>Hiền</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Đặt bàn và goi món</td>
+    <td>Khiêm</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Đổi điểm tích lũy</td>
+    <td>Hiền</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Quản lý thông tin cá nhân</td>
+    <td>Hiền</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Xem lịch sử hóa đơn</td>
+    <td>Khiêm</td>
+  </tr>
+</table>
