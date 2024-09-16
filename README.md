@@ -16,11 +16,11 @@
     <td>Thành viên</td>
   </tr>
 </table>
-<br>
+<hr>
 <h3>Sử dụng</h3>
 <ul>
   <li>.NET Framework version 4.8</li>
   <li>Visual studio 2022</li>
 </ul>
-<br>
+<hr>
 <h3>Chi tiết</h3>
