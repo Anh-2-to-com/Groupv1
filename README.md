@@ -27,6 +27,7 @@
 <img src="Untitled-1.png"/>
 <hr>
 <h3>Dự án</h3>
+<hr size="3px"/>
 <h4>Hệ thống quản lý nhà hàng</h4>
 <h6>Mô tả dự án</h6>
 Xây dựng hệ thống Quản lý Nhà Hàng một cách chuyên nghiệp, linh hoạt, có thể quản lý và lưu trữ được một lượng dữ liệu lớn. Hệ thống giúp người dùng dễ dàng hơn trong việc tổ chức, quản lý dữ liệu Khách hàng, quản lý Đặt bàn, quản lý Thực đơn,… và nhiều hơn thế nữa.
