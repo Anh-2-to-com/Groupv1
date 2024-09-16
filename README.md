@@ -77,8 +77,10 @@ Nghiệp vụ: <br>
   </tr>
 </table>
 <br>
-App: Winform <br>
-Ngôn ngữ: c# <br>
+<div>
+  App: Winform <br>
+  Ngôn ngữ: c#
+</div>
 <table>
   <tr>
     <th>STT</th>
