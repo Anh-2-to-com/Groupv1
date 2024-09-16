@@ -24,3 +24,4 @@
 </ul>
 <hr>
 <h3>Chi tiết</h3>
+<img src="E:\Nam_4\HK1\PTPM_AI\Untitled-1.png"/>
