@@ -136,3 +136,52 @@ Ngôn ngữ: c# <br>
     <td>Hiền</td>
   </tr>
 </table>
+<h3>Chức năng</h3>
+<h4>Website</h4>
+<h5>Đặt bàn và gọi món</h5>
+<ul>
+  <li>Khách hàng có thể đặt bàn và xem trạng thái của bàn đã được đặt hay chưa</li>
+  <li>Khách hàng có thể đặt món và xem danh sách các món ăn có tại nhà hàng</li>
+</ul>
+<h5>Đổi điểm tích lũy</h5>
+<ul>
+  <li>Khi khách hàng thanh toán hóa đơn thì điểm tích lũy sẽ được tích vào tài khoản của khách hàng dùng để đổi voucher</li>
+</ul>
+<h5>Quản lý thông tin cá nhân</h5>
+<ul>
+   <li>Xem thông tin cá nhân</li>
+  <li>Đặt lại mật khẩu</li>
+</ul>
+<h5>Xem lịch sử hóa đơn</h5>
+<ul>
+  <li>Khách hàng có thể xem lại tất cả các hóa đơn đã thanh toán</li>
+</ul>
+<h4>Winform</h4>
+<h5>Quản lý bàn</h5>
+<ul>
+  <li>Thêm, xóa, sửa bàn</li>
+</ul>
+<h5>Quản lý nguyên liệu</h5>
+<ul>
+  <li>Thêm, xóa, sửa nguyên liệu</li>
+</ul>
+<h5>Quản lý Thực Đơn</h5>
+<ul>
+  <li>Xem danh sách thực đơn</li>
+  <li>Thêm, xóa, sửa thực đơn</li>
+</ul>
+<h5>Quản lý Thực Đơn</h5>
+<ul>
+  <li>Xem danh sách thực đơn</li>
+  <li>Thêm, xóa, sửa thực đơn</li>
+</ul>
+<h5>Quản lý Nhân Sự</h5>
+<ul>
+  <li>Xem thông tin nhân viên</li>
+  <li>Thêm, sửa nhân sự</li>
+  <li>Phân quyền nhân viên</li>
+</ul>
+<h5>Báo cáo Doanh Thu</h5>
+<ul>
+  <li>Xem báo cáo doanh thu từng tháng</li>
+</ul>
