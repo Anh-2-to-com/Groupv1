@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WinformComponentCustome</RootNamespace>
     <AssemblyName>WinformComponentCustome</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibraryFormCustom">
+      <HintPath>..\..\..\testConnectTxt\test2\LibraryFormCustom\bin\Debug\LibraryFormCustom.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,18 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmDangNhap.cs">
+    <Compile Include="ucDangNhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmDangNhap.Designer.cs">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    <Compile Include="ucDangNhap.Designer.cs">
+      <DependentUpon>ucDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_NguoiDung.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmDangNhap.resx">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="ucDangNhap.resx">
+      <DependentUpon>ucDangNhap.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProjectPublic</RootNamespace>
     <AssemblyName>ProjectPublic</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibraryFormCustom">
+      <HintPath>..\..\..\testConnectTxt\test2\LibraryFormCustom\bin\Debug\LibraryFormCustom.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,19 +48,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\UserBL.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Views\Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Module_DN.cs">
+      <DependentUpon>Module_DN.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Module_DN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Module_DN.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhanQuyenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PhanQuyenForm.Designer.cs">
+      <DependentUpon>PhanQuyenForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,7 +84,28 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PhanQuyenForm.resx">
+      <DependentUpon>PhanQuyenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Module_DN.xsc">
+      <DependentUpon>Module_DN.xsd</DependentUpon>
+    </None>
+    <None Include="Module_DN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Module_DN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Module_DN.xss">
+      <DependentUpon>Module_DN.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,6 +128,279 @@
       <Project>{B034AC55-6B91-4443-B677-66B6649660D2}</Project>
       <Name>WinformComponentCustome</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\1.png" />
+    <Content Include="Icons\10.png" />
+    <Content Include="Icons\11.png" />
+    <Content Include="Icons\12.png" />
+    <Content Include="Icons\13.png" />
+    <Content Include="Icons\14.png" />
+    <Content Include="Icons\2.png" />
+    <Content Include="Icons\3.png" />
+    <Content Include="Icons\4.png" />
+    <Content Include="Icons\5.png" />
+    <Content Include="Icons\6.png" />
+    <Content Include="Icons\7.png" />
+    <Content Include="Icons\8.png" />
+    <Content Include="Icons\9.png" />
+    <Content Include="Icons\aboutus.jpg" />
+    <Content Include="Icons\add.png" />
+    <Content Include="Icons\analytics %281%29.png" />
+    <Content Include="Icons\analytics.png" />
+    <Content Include="Icons\ask %281%29.png" />
+    <Content Include="Icons\ask.png" />
+    <Content Include="Icons\avatarProfile.jpg" />
+    <Content Include="Icons\back.png" />
+    <Content Include="Icons\bell %281%29.png" />
+    <Content Include="Icons\bell-boy %281%29.png" />
+    <Content Include="Icons\bell-boy.png" />
+    <Content Include="Icons\bell.png" />
+    <Content Include="Icons\bill %281%29.png" />
+    <Content Include="Icons\bill.png" />
+    <Content Include="Icons\bin %281%29.png" />
+    <Content Include="Icons\book.png" />
+    <Content Include="Icons\booking %281%29.png" />
+    <Content Include="Icons\booking.png" />
+    <Content Include="Icons\businessman.png" />
+    <Content Include="Icons\calendar.png" />
+    <Content Include="Icons\cancellation.png" />
+    <Content Include="Icons\cash-payment.png" />
+    <Content Include="Icons\change.png" />
+    <Content Include="Icons\check-list %281%29.png" />
+    <Content Include="Icons\check-list.png" />
+    <Content Include="Icons\circle-loader.gif" />
+    <Content Include="Icons\clipboard.png" />
+    <Content Include="Icons\clock.png" />
+    <Content Include="Icons\close %282%29.png" />
+    <Content Include="Icons\close %284%29.png" />
+    <Content Include="Icons\customer %281%29.png" />
+    <Content Include="Icons\customer.png" />
+    <Content Include="Icons\delete %281%29.png" />
+    <Content Include="Icons\delete %282%29.png" />
+    <Content Include="Icons\delete.png" />
+    <Content Include="Icons\dismiss.png" />
+    <Content Include="Icons\eating.png" />
+    <Content Include="Icons\edit.png" />
+    <Content Include="Icons\edit_note_FILL1_wght700_GRAD0_opsz40.png" />
+    <Content Include="Icons\elearning.png" />
+    <Content Include="Icons\email %281%29.png" />
+    <Content Include="Icons\email.png" />
+    <Content Include="Icons\equalizer.png" />
+    <Content Include="Icons\ERD.png" />
+    <Content Include="Icons\error.png" />
+    <Content Include="Icons\excel.png" />
+    <Content Include="Icons\expenses.png" />
+    <Content Include="Icons\export.png" />
+    <Content Include="Icons\file.png" />
+    <Content Include="Icons\flag.png" />
+    <Content Include="Icons\food.png" />
+    <Content Include="Icons\Food\Aquarius\75.jpg" />
+    <Content Include="Icons\Food\Aquarius\76.jpg" />
+    <Content Include="Icons\Food\Aquarius\77.jpg" />
+    <Content Include="Icons\Food\Aquarius\78.jpg" />
+    <Content Include="Icons\Food\Aquarius\79.jpg" />
+    <Content Include="Icons\Food\Aquarius\80.jpg" />
+    <Content Include="Icons\Food\Aquarius\81.jpg" />
+    <Content Include="Icons\Food\Aquarius\82.jpg" />
+    <Content Include="Icons\Food\Aquarius\83.jpg" />
+    <Content Include="Icons\Food\Aries\1.jpg" />
+    <Content Include="Icons\Food\Aries\10.jpg" />
+    <Content Include="Icons\Food\Aries\11.jpg" />
+    <Content Include="Icons\Food\Aries\12.jpg" />
+    <Content Include="Icons\Food\Aries\2.jpg" />
+    <Content Include="Icons\Food\Aries\3.jpg" />
+    <Content Include="Icons\Food\Aries\4.jpg" />
+    <Content Include="Icons\Food\Aries\5.jpg" />
+    <Content Include="Icons\Food\Aries\6.jpg" />
+    <Content Include="Icons\Food\Aries\7.jpg" />
+    <Content Include="Icons\Food\Aries\8.jpg" />
+    <Content Include="Icons\Food\Aries\9.jpg" />
+    <Content Include="Icons\Food\Cancer\29.jpg" />
+    <Content Include="Icons\Food\Cancer\30.jpg" />
+    <Content Include="Icons\Food\Cancer\31.jpg" />
+    <Content Include="Icons\Food\Cancer\32.jpg" />
+    <Content Include="Icons\Food\Cancer\33.jpg" />
+    <Content Include="Icons\Food\Cancer\34.jpg" />
+    <Content Include="Icons\Food\Capricorn\63.jpg" />
+    <Content Include="Icons\Food\Capricorn\64.jpg" />
+    <Content Include="Icons\Food\Capricorn\65.jpg" />
+    <Content Include="Icons\Food\Capricorn\66.jpg" />
+    <Content Include="Icons\Food\Capricorn\67.jpg" />
+    <Content Include="Icons\Food\Capricorn\68.jpg" />
+    <Content Include="Icons\Food\Capricorn\69.jpg" />
+    <Content Include="Icons\Food\Capricorn\70.jpg" />
+    <Content Include="Icons\Food\Capricorn\71.jpg" />
+    <Content Include="Icons\Food\Capricorn\72.jpg" />
+    <Content Include="Icons\Food\Capricorn\73.jpg" />
+    <Content Include="Icons\Food\Capricorn\74.jpg" />
+    <Content Include="Icons\Food\Gemini\22.jpg" />
+    <Content Include="Icons\Food\Gemini\23.jpg" />
+    <Content Include="Icons\Food\Gemini\24.jpg" />
+    <Content Include="Icons\Food\Gemini\25.jpg" />
+    <Content Include="Icons\Food\Gemini\26.jpg" />
+    <Content Include="Icons\Food\Gemini\27.jpg" />
+    <Content Include="Icons\Food\Gemini\28.jpg" />
+    <Content Include="Icons\Food\Leo\35.jpg" />
+    <Content Include="Icons\Food\Leo\36.jpg" />
+    <Content Include="Icons\Food\Leo\37.jpg" />
+    <Content Include="Icons\Food\Leo\38.jpg" />
+    <Content Include="Icons\Food\Leo\39.jpg" />
+    <Content Include="Icons\Food\Leo\40.jpg" />
+    <Content Include="Icons\Food\Libra\47.jpg" />
+    <Content Include="Icons\Food\Libra\48.jpg" />
+    <Content Include="Icons\Food\Libra\49.jpg" />
+    <Content Include="Icons\Food\Libra\50.jpg" />
+    <Content Include="Icons\Food\Libra\51.jpg" />
+    <Content Include="Icons\Food\Libra\52.jpg" />
+    <Content Include="Icons\Food\Pisces\84.jpg" />
+    <Content Include="Icons\Food\Pisces\85.jpg" />
+    <Content Include="Icons\Food\Pisces\86.jpg" />
+    <Content Include="Icons\Food\Pisces\87.jpg" />
+    <Content Include="Icons\Food\Pisces\88.jpg" />
+    <Content Include="Icons\Food\Pisces\89.jpg" />
+    <Content Include="Icons\Food\Sagittarius\57.jpg" />
+    <Content Include="Icons\Food\Sagittarius\58.jpg" />
+    <Content Include="Icons\Food\Sagittarius\59.jpg" />
+    <Content Include="Icons\Food\Sagittarius\60.jpg" />
+    <Content Include="Icons\Food\Sagittarius\61.jpg" />
+    <Content Include="Icons\Food\Sagittarius\62.jpg" />
+    <Content Include="Icons\Food\Scorpio\53.jpg" />
+    <Content Include="Icons\Food\Scorpio\54.jpg" />
+    <Content Include="Icons\Food\Scorpio\55.jpg" />
+    <Content Include="Icons\Food\Scorpio\56.jpg" />
+    <Content Include="Icons\Food\Taurus\13.jpg" />
+    <Content Include="Icons\Food\Taurus\14.jpg" />
+    <Content Include="Icons\Food\Taurus\15.jpg" />
+    <Content Include="Icons\Food\Taurus\16.jpg" />
+    <Content Include="Icons\Food\Taurus\17.jpg" />
+    <Content Include="Icons\Food\Taurus\18.jpg" />
+    <Content Include="Icons\Food\Taurus\19.jpg" />
+    <Content Include="Icons\Food\Taurus\20.jpg" />
+    <Content Include="Icons\Food\Taurus\21.jpg" />
+    <Content Include="Icons\Food\Unknown\unknown.jpg" />
+    <Content Include="Icons\Food\Virgo\41.jpg" />
+    <Content Include="Icons\Food\Virgo\42.jpg" />
+    <Content Include="Icons\Food\Virgo\43.jpg" />
+    <Content Include="Icons\Food\Virgo\44.jpg" />
+    <Content Include="Icons\Food\Virgo\45.jpg" />
+    <Content Include="Icons\Food\Virgo\46.jpg" />
+    <Content Include="Icons\go-to-end-50.png" />
+    <Content Include="Icons\go-to-start-50.png" />
+    <Content Include="Icons\grocery.png" />
+    <Content Include="Icons\hide.png" />
+    <Content Include="Icons\hired.png" />
+    <Content Include="Icons\import %281%29.png" />
+    <Content Include="Icons\information-desk.png" />
+    <Content Include="Icons\ingredient.jpg" />
+    <Content Include="Icons\ingredient1.jpg" />
+    <Content Include="Icons\inventory %281%29.png" />
+    <Content Include="Icons\inventory.png" />
+    <Content Include="Icons\invoice.jpg" />
+    <Content Include="Icons\invoice1.jpg" />
+    <Content Include="Icons\job.png" />
+    <Content Include="Icons\karina.jpg" />
+    <Content Include="Icons\karina1.jpg" />
+    <Content Include="Icons\left-arrow-50.png" />
+    <Content Include="Icons\levels.png" />
+    <Content Include="Icons\loader %281%29.gif" />
+    <Content Include="Icons\loader.gif" />
+    <Content Include="Icons\loading.gif" />
+    <Content Include="Icons\logo_login.png" />
+    <Content Include="Icons\logo_register.png" />
+    <Content Include="Icons\logo_restaurant.png" />
+    <Content Include="Icons\loupe %281%29.png" />
+    <Content Include="Icons\mail.png" />
+    <Content Include="Icons\menu %281%29.png" />
+    <Content Include="Icons\menu %282%29.png" />
+    <Content Include="Icons\menu %283%29.png" />
+    <Content Include="Icons\menu.png" />
+    <Content Include="Icons\MenuBar\analytics.png" />
+    <Content Include="Icons\MenuBar\aquarius.png" />
+    <Content Include="Icons\MenuBar\aries.png" />
+    <Content Include="Icons\MenuBar\astrology.png" />
+    <Content Include="Icons\MenuBar\bill.png" />
+    <Content Include="Icons\MenuBar\cancer.png" />
+    <Content Include="Icons\MenuBar\capricorn.png" />
+    <Content Include="Icons\MenuBar\customer.png" />
+    <Content Include="Icons\MenuBar\export.png" />
+    <Content Include="Icons\MenuBar\gemini.png" />
+    <Content Include="Icons\MenuBar\import.png" />
+    <Content Include="Icons\MenuBar\information.png" />
+    <Content Include="Icons\MenuBar\inventory.png" />
+    <Content Include="Icons\MenuBar\invoice.png" />
+    <Content Include="Icons\MenuBar\kho.png" />
+    <Content Include="Icons\MenuBar\leo.png" />
+    <Content Include="Icons\MenuBar\libra.png" />
+    <Content Include="Icons\MenuBar\logout.png" />
+    <Content Include="Icons\MenuBar\menu.png" />
+    <Content Include="Icons\MenuBar\nglieu.png" />
+    <Content Include="Icons\MenuBar\pisces.png" />
+    <Content Include="Icons\MenuBar\sagittarius.png" />
+    <Content Include="Icons\MenuBar\scorpio.png" />
+    <Content Include="Icons\MenuBar\staff.png" />
+    <Content Include="Icons\MenuBar\star.png" />
+    <Content Include="Icons\MenuBar\table.png" />
+    <Content Include="Icons\MenuBar\taurus.png" />
+    <Content Include="Icons\MenuBar\user.png" />
+    <Content Include="Icons\MenuBar\virgo.png" />
+    <Content Include="Icons\minus.png" />
+    <Content Include="Icons\next-50.png" />
+    <Content Include="Icons\no-food.png" />
+    <Content Include="Icons\notepad %281%29.png" />
+    <Content Include="Icons\notepad.png" />
+    <Content Include="Icons\one.png" />
+    <Content Include="Icons\online-order.png" />
+    <Content Include="Icons\parkbogum.jpg" />
+    <Content Include="Icons\pass.png" />
+    <Content Include="Icons\pencil.png" />
+    <Content Include="Icons\pisces %281%29.png" />
+    <Content Include="Icons\pisces.png" />
+    <Content Include="Icons\plus.png" />
+    <Content Include="Icons\product.png" />
+    <Content Include="Icons\profile.jpg" />
+    <Content Include="Icons\profile.png" />
+    <Content Include="Icons\profile1.jpg" />
+    <Content Include="Icons\profile2.jpg" />
+    <Content Include="Icons\profit.png" />
+    <Content Include="Icons\rating.png" />
+    <Content Include="Icons\receipt %281%29.png" />
+    <Content Include="Icons\receipt %282%29.png" />
+    <Content Include="Icons\receipt.png" />
+    <Content Include="Icons\refresh.png" />
+    <Content Include="Icons\remove.png" />
+    <Content Include="Icons\rename.png" />
+    <Content Include="Icons\reset-password %281%29.png" />
+    <Content Include="Icons\reset-password.png" />
+    <Content Include="Icons\restaurant%281%29.png" />
+    <Content Include="Icons\revenue.png" />
+    <Content Include="Icons\search.png" />
+    <Content Include="Icons\selling.png" />
+    <Content Include="Icons\shopping-cart.png" />
+    <Content Include="Icons\stock.png" />
+    <Content Include="Icons\success.png" />
+    <Content Include="Icons\table.png" />
+    <Content Include="Icons\table2.png" />
+    <Content Include="Icons\test.png" />
+    <Content Include="Icons\three.png" />
+    <Content Include="Icons\two.png" />
+    <Content Include="Icons\user %282%29.png" />
+    <Content Include="Icons\user %283%29.png" />
+    <Content Include="Icons\view.png" />
+    <Content Include="Icons\voucher.png" />
+    <Content Include="Icons\Voucher\100off.jpg" />
+    <Content Include="Icons\Voucher\20off.jpg" />
+    <Content Include="Icons\Voucher\30off.jpg" />
+    <Content Include="Icons\Voucher\50off.jpg" />
+    <Content Include="Icons\Voucher\60off.jpg" />
+    <Content Include="Icons\warehouse %282%29.png" />
+    <Content Include="Icons\warehouse.png" />
+    <Content Include="Icons\warning %281%29.png" />
+    <Content Include="Icons\warning %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
